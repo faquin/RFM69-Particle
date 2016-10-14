@@ -1,6 +1,6 @@
 {
   "name": "RFM69-Particle",
-  "author": "Jurie Pieterse <juriep@twitter.com",
+  "author": "Jurie Pieterse <juriep@twitter.com>",
   "license": "GPL3.0",
   "version": "0.0.1",
   "description": "Adjusted to work with Photon. Derived from LowPowerLab's RFM69 library.",
