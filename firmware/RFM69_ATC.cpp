@@ -32,7 +32,7 @@
 // **********************************************************************************
 
 #include <RFM69_ATC.h>
-#include <RFM69.h>   // include the RFM69 library files as well
+#include <RFM69-Particle.h>   // include the RFM69 library files as well
 #include <RFM69registers.h>
 //#include <SPI.h>
 
