@@ -32,10 +32,10 @@
 #include "application.h"
 #endif
 
-#ifndef RFM69-Particle_h
-#define RFM69-Particle_h
-//#ifndef RFM69_h
-//#define RFM69_h
+//#ifndef RFM69-Particle_h
+//#define RFM69-Particle_h
+#ifndef RFM69_h
+#define RFM69_h
 
 #define RF69_MAX_DATA_LEN         61 // to take advantage of the built in AES/CRC we want to limit the frame size to the internal FIFO size (66 bytes - 3 bytes overhead)
 #define RF69_SPI_CS               SS // SS is the SPI slave select pin, for instance D10 on atmega328
