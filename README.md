@@ -3,6 +3,7 @@
 - It can be used locally or in the Particle Web IDE
 - For the Web IDE use the "+" to add additional files and copy and paste the code for the 5 library files
 - When you're done your web interface should look like the image "[Particle-WebIDE.PNG] (https://github.com/bloukingfisher/RFM69/blob/master/Examples/Photon/Particle-WebIDE.PNG)"
+- A custom working [example for Photon](https://github.com/bloukingfisher/RFM69/tree/master/Examples/Photon) which uses serial and Particle Console Logs for easy verification that it works.
 
 # RFM69 Library  [![Build Status](https://travis-ci.org/LowPowerLab/RFM69.svg)](https://travis-ci.org/LowPowerLab/RFM69)
 
