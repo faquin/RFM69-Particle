@@ -31,10 +31,9 @@
 // and copyright notices in any redistribution of this code
 // **********************************************************************************
 
-#include <RFM69_ATC.h>
-#include <RFM69-Particle.h>   // include the RFM69 library files as well
-#include <RFM69registers.h>
-//#include <SPI.h>
+#include "RFM69_ATC.h"
+#include "RFM69-Particle.h"   // include the RFM69 library files as well
+#include "RFM69registers.h"
 
 volatile uint8_t RFM69_ATC::ACK_RSSI_REQUESTED;  // new type of flag on ACK_REQUEST
 
