@@ -1,8 +1,6 @@
 ##Forked library for Particle Photon use
 - Is confirmed to work with Particle Photon
-- It can be used locally or in the Particle Web IDE
-- For the Web IDE use the "+" to add additional files and copy and paste the code for the 5 library files
-- When you're done your web interface should look like the image "[Particle-WebIDE.PNG](https://github.com/bloukingfisher/RFM69-Particle/blob/master/Particle-WebIDE.PNG)"
+- It can be used locally or in the Particle Web IDE (it is now included in the Community Libraries to add easily)
 - A custom working [example for Photon](https://github.com/bloukingfisher/RFM69-Particle/tree/master/firmware/examples) which uses serial and Particle Console Logs for easy verification that it works.
 
 # RFM69 Library  [![Build Status](https://travis-ci.org/LowPowerLab/RFM69.svg)](https://travis-ci.org/LowPowerLab/RFM69)
