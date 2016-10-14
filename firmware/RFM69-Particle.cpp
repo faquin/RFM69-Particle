@@ -33,7 +33,7 @@
 #if defined(SPARK)
 #include "application.h"
 #endif
-#include "RFM69.h"
+#include "RFM69-Particle.h"
 #include "RFM69registers.h"
 
 volatile byte RFM69::DATA[RF69_MAX_DATA_LEN];
