@@ -1,16 +1,7 @@
 {
   "name": "RFM69-Particle",
   "author": "Jurie Pieterse",
-  "keywords": "rf, radio, wireless, spi",
-  "description": "Adjusted to work with Photon. Derived from LowPowerLab's RFM69 library for RFM69W, RFM69HW, RFM69CW, RFM69HCW (semtech SX1231, SX1231H)",
-  "repository":
-  {
-    "type": "git",
-    "url": "https://github.com/bloukingfisher/RFM69.git"
-  },
   "version": "0.0.1 Particle",
-  "frameworks": "photon",
-  "platforms": "particle"
+  "description": "Adjusted to work with Photon. Derived from LowPowerLab's RFM69 library.",
 }
 
-  
