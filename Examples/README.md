@@ -1,1 +1,1 @@
-##These examples are not tested for Particle Photon
+##"Photon" directory "Hello World" example the only one tested for Particle Photon
