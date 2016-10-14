@@ -32,8 +32,6 @@
 #include "application.h"
 #endif
 
-//#ifndef RFM69-Particle_h
-//#define RFM69-Particle_h
 #ifndef RFM69_h
 #define RFM69_h
 
