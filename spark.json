@@ -8,8 +8,9 @@
     "type": "git",
     "url": "https://github.com/bloukingfisher/RFM69.git"
   },
+  "version": "0.0.1 Particle",
   "frameworks": "photon",
   "platforms": "particle"
 }
 
-  "version": "0.0.1 Particle",
+  
