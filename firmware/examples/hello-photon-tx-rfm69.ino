@@ -138,7 +138,9 @@ void loop() {
     // if (radio.sendWithRetry(RECEIVER, radiopacket, strlen(radiopacket))) { //target node Id, message as string or byte array, message length
     // Serial.println("OK, sent with retry");
     
-    
+    //send message to Particle console if not using serial
+    String TXMessage = "[NODE: " + String(NODEID) + "]  " + String(radiopacket) + " ";
+    Particle.publish("Message transmitted",TXMessage,360,PRIVATE);    
     radio.receiveDone(); //put radio in RX mode
 
   delay(2000);  //wait 2 seconds between transmits
