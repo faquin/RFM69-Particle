@@ -4,6 +4,7 @@
 // **********************************************************************************
 // Copyright Thomas Studwell (2014,2015)
 // Adjustments by Felix Rusu, LowPowerLab.com
+// Adjustments by Jurie Pieterse for Particle Photon
 // **********************************************************************************
 // License
 // **********************************************************************************
@@ -29,10 +30,11 @@
 // Please maintain this license information along with authorship
 // and copyright notices in any redistribution of this code
 // **********************************************************************************
+
 #include <RFM69_ATC.h>
 #include <RFM69.h>   // include the RFM69 library files as well
 #include <RFM69registers.h>
-#include <SPI.h>
+//#include <SPI.h>
 
 volatile uint8_t RFM69_ATC::ACK_RSSI_REQUESTED;  // new type of flag on ACK_REQUEST
 
@@ -107,6 +109,11 @@ void RFM69_ATC::sendFrame(uint8_t toAddress, const void* buffer, uint8_t bufferS
   SPI.transfer(_address);
 
   // control byte
+  #if defined(SPARK)
+  // TWS: define CTLbyte bits
+	#define RFM69_CTL_SENDACK   0x80 //Added here since Particle compiler produced an error
+	#define RFM69_CTL_REQACK    0x40 //Added here since Particle compiler produced an error
+  #endif
   if (sendACK) {                   // TomWS1: adding logic to return ACK_RSSI if requested
     SPI.transfer(RFM69_CTL_SENDACK | (sendRSSI?RFM69_CTL_RESERVE1:0));  // TomWS1  TODO: Replace with EXT1
     if (sendRSSI) {
