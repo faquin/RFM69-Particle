@@ -2,6 +2,8 @@
 - Is confirmed to work with Particle Photon
 - It can be used locally or in the Particle Web IDE (it is now included in the Community Libraries to add easily)
 - A custom working [example for Photon](https://github.com/bloukingfisher/RFM69-Particle/tree/master/firmware/examples) which uses serial and Particle Console Logs for easy verification that it works.
+- If you're using ATC or Registers make sure you include these statements in Particle IDE as "using library in app" does not add them automatically: #include "RFM69-Particle/RFM69_ATC.h"  #include "RFM69-Particle/RFM69registers.h"
+- For ATC to function correctly make sure you use the latest library version (version 0.0.2 or later)
 
 # RFM69 Library  [![Build Status](https://travis-ci.org/LowPowerLab/RFM69.svg)](https://travis-ci.org/LowPowerLab/RFM69)
 
