@@ -43,7 +43,7 @@ volatile uint8_t RFM69_ATC::ACK_RSSI_REQUESTED;  // new type of flag on ACK_REQU
 bool RFM69_ATC::initialize(uint8_t freqBand, uint8_t nodeID, uint8_t networkID) {
   _targetRSSI = 0;        // TomWS1: default to disabled
   _ackRSSI = 0;           // TomWS1: no existing response at init time
-  ACK_RSSI_REQUESTED = 0; // TomWS1: init to none
+  ACK_RSSI_REQUESTED = 1; // TomWS1: init to none //Jurie: Could only get Photon to ACK RSSI back with 1
   //_powerBoost = false;    // TomWS1: require someone to explicitly turn boost on!
   _transmitLevel = 31;    // TomWS1: match default value in PA Level register
   return RFM69::initialize(freqBand, nodeID, networkID);  // use base class to initialize most everything
