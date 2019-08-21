@@ -496,9 +496,9 @@ void RFM69::setIRQ(byte newIRQ) {
     }
   #elif defined(SPARK)
     // IRQ authorized on spark core are
-    // D0, D1, D2, D3, D4, A0, A1, A3, A4, A5, A6, A7
+    // D0, D1, D2, D3, D4, A0, A1, A3, A4, A5, A6
     // see http://docs.spark.io/firmware/#interrupts-attachinterrupt
-    if ( (newIRQ>=D0 && newIRQ<=D4 ) || (newIRQ>=A0 && newIRQ<=A7 && newIRQ!=A2) )
+    if ( (newIRQ>=D0 && newIRQ<=D4 ) || (newIRQ>=A0 && newIRQ<=A6 && newIRQ!=A2) )
     {
       _interruptPin = newIRQ;
       _interruptNum = _interruptPin;
